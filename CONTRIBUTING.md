@@ -4,17 +4,32 @@
 
 ### Running Frontend:
 
+Install packages
 ```sh
 npm install
+```
+
+Run the app
+```sh
 npm run dev
 ```
 
 ### Running Backend:
 
+Assuming you have Python installed, create and activate a Python Virtual Environment
 ```sh
-source albee/bin/activate
+virtualenv venv
+source venv/bin/activate
+```
+
+Install dependencies
+```sh
 pip install -r requirements.txt
-python3 runserver.py ????
+```
+
+Run the app
+```sh
+python manage.py runserver
 ```
 Note port 5432 is the default port for Postgres
 
